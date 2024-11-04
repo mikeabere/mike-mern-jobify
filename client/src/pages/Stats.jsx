@@ -13,7 +13,7 @@ export const loader = async () => {
 
 function Stats() {
    //const { defaultStats, monthlyApplications } = useLoaderData();
-  const { isLoading, isError, data } = useQuery(statsQuery);
+  //const { isLoading, isError, data } = useQuery(statsQuery);
    const response = useQuery({
      queryKey: ["stats"],
      queryFn: () => customFetch.get("/jobs/stats"),
